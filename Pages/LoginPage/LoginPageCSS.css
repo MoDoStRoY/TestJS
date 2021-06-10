@@ -18,8 +18,10 @@
 
 #fxTitle
 {
-    background-color: darkred;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(darkred), to(black));;
     color: goldenrod;
+    width: 100%;
+    height: 8%;
 }
 
 #fxNameOfSite
@@ -31,13 +33,32 @@
     padding: 0;
 }
 
-#fxAuthorizationButton
+#fxLoginPasswordArea
 {
+    float: left;
+    width: 20%;
+    margin-left: 50%;
+}
+
+#fxLoginInp
+{
+    margin-bottom: 3%;
     background-color: darkred;
+    color: goldenrod;
+}
+
+#fxPasswordInp
+{
+    background-color: black;
+    color: goldenrod;
+}
+
+#fxAuthorizationBtn
+{
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(darkred), to(black));
     color: goldenrod;
     font-size: 120%;
     font-weight: bold;
-    margin-left: 70%;
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 5%;
@@ -50,4 +71,16 @@
     width: 30%;
     margin-top: 10%;
     margin-left: 3%;
+}
+
+#fxRegistrationBtn
+{
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(darkred), to(black));
+    color: goldenrod;
+    font-size: 120%;
+    font-weight: bold;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 25%;
+    padding-right: 25%;
 }

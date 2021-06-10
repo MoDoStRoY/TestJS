@@ -7,15 +7,22 @@
 </head>
 <body id="fxBody">
 
+<script src="JS/Authorization.js"></script>
+
 <div id="fxTitle">
   <h1 id="fxNameOfSite">ВСоюзе</h1>
-  <button id="fxAuthorizationButton">Войти</button>
+  <div id="fxLoginPasswordArea">
+    <input id="fxLoginInp"></input>
+    <input id="fxPasswordInp"></input>
+  </div>
+  <button id="fxAuthorizationBtn" onclick="authorize()">Войти</button>
 </div>>
 
 <div id="fxAboutTextArea">
   <h1>Товарищеское объединение ВСоюзе</h1>
   <p>Зона свободная от тлетворного влияния запада, толерантности и прочих вещей чуждых Советскому человеку.</p>
   <p>Если ты, товарищ, ищешь достойное средство для общения с единомышленниками, то это как раз то, что тебе нужно.</p>
+  <button id="fxRegistrationBtn">Регистрация</button>
 </div>
 
 </body>
