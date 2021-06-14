@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="MainPageCSS.css"/>
+    <link rel="stylesheet" type="text/css" href="MessagePageCSS.css"/>
     <script src="../JS/LeftBox.js"></script>
+    <script src="JS/SendMessage.js"></script>
 </head>
 <body id="fxBody">
 
@@ -24,8 +25,9 @@
 </div>
 
 <div id="fxMainBox">
-    <img id="fxUserAvatar" src="HoboIcon1.jpg" alt="Error 404">
-    <p id="fxUserName">Хуйжопа</p>
+    <label for="fxMessagesBox"></label><textarea id="fxMessagesBox"></textarea>
+    <label for="fxMessageArea"></label><textarea id="fxMessageArea"></textarea>
+    <button id="fxSendBtn" onclick="sendMessage(document)">Отправить</button>
 </div>
 
 </body>

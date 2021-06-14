@@ -118,7 +118,23 @@
     font-size: 100%;
 }
 
-#fxUserAvatar
+#fxMessagesBox
 {
+    width: 83%;
+    height: 60%;
+    background-color: black;
+    color: goldenrod;
+}
 
+#fxMessageArea
+{
+    width: 83%;
+    height: 20%;
+    background-color: black;
+    color: goldenrod;
+}
+
+#fxSendBtn
+{
+    width: 83%;
 }
