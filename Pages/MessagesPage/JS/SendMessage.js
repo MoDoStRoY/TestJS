@@ -1,14 +1,36 @@
-function sendMessage(doc)
+let doc;
+
+async function sendMessage(docIN)
 {
+    doc = docIN;
 
-    let xhr = new XMLHttpRequest();
-    xhr.open("POST", `https://localhost:44349/api/Messages`, true);
-    xhr.setRequestHeader('Content-Type', 'text/plain');
-    xhr.send(doc.getElementById("fxMessageArea").textContent);
+    let buffer = doc.getElementById("fxMessageArea").value.toString();
 
-    xhr.onreadystatechange = function ()
+    let response = await fetch('https://localhost:44349/api/messages/send',
+        {
+        method: 'POST',
+        headers: {'Accept': 'text/pl',
+            'Content-Type': 'application/json'},
+        body: JSON.stringify({body: buffer})
+        });
+
+    parseResponse(await response.text());
+}
+
+function parseResponse(listOfMessages)
+{
+    let parsedListOfMessages = JSON.parse(listOfMessages);
+
+    updateUI(parsedListOfMessages);
+}
+
+function updateUI(listOfMessages)
+{
+    doc.getElementById("fxMessagesBox").value = "";
+    doc.getElementById("fxMessageArea").value = "";
+
+    for (let i = 0; i < listOfMessages.length; i++)
     {
-        doc.getElementById("fxMessagesBox").value = xhr.response;
-        doc.getElementById("fxMessageArea").value = "";
+        doc.getElementById("fxMessagesBox").value += listOfMessages[i].body + "\n\n";
     }
 }
