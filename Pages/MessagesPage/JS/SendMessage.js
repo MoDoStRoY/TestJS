@@ -6,7 +6,7 @@ async function sendMessage(docIN)
 
     let buffer = doc.getElementById("fxMessageArea").value.toString();
 
-    let response = await fetch('https://localhost:44349/api/messages/send',
+    let response = await fetch('http://localhost:62993/api/messages/send',
         {
         method: 'POST',
         headers: {'Accept': 'text/pl',

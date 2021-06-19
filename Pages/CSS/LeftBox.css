@@ -1,0 +1,73 @@
+#fxLeftBox
+{
+    float: left;
+    width: 15%;
+    height: 50%;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+#fxMyPageBtn
+{
+    background-color: black;
+    color: goldenrod;
+    font-size: 100%;
+    width: 100%;
+    padding: 3%;
+}
+#fxMsgBtn
+{
+    background-color: black;
+    color: goldenrod;
+    font-size: 100%;
+    width: 100%;
+    padding: 3%;
+}
+#fxComradesBtn
+{
+    background-color: black;
+    color: goldenrod;
+    font-size: 100%;
+    width: 100%;
+    padding: 3%;
+}
+#fxCommunitiesBtn
+{
+    background-color: black;
+    color: goldenrod;
+    font-size: 100%;
+    width: 100%;
+    padding: 3%;
+}
+#fxPhotosBtn
+{
+    background-color: black;
+    color: goldenrod;
+    font-size: 100%;
+    width: 100%;
+    padding: 3%;
+}
+#fxMusicBtn
+{
+    background-color: black;
+    color: goldenrod;
+    font-size: 100%;
+    width: 100%;
+    padding: 3%;
+}
+#fxVideosBtn
+{
+    background-color: black;
+    color: goldenrod;
+    font-size: 100%;
+    width: 100%;
+    padding: 3%;
+}
+#fxFilesBtn
+{
+    background-color: black;
+    color: goldenrod;
+    font-size: 100%;
+    width: 100%;
+    padding: 3%;
+}

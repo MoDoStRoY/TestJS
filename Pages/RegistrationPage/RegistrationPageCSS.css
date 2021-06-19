@@ -1,0 +1,47 @@
+#fxMainBox
+{
+    width: 25%;
+    margin-left: 40%;
+    height: 30%;
+    margin-top: 10%;
+}
+
+#fxName
+{
+    background-color: darkred;
+    color: goldenrod;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+#fxLogin
+{
+    background-color: darkred;
+    color: goldenrod;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+#fxPassword
+{
+    background-color: darkred;
+    color: goldenrod;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+#fxRegistrationBtn
+{
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(darkred), to(black));
+    color: goldenrod;
+    font-size: 120%;
+    font-weight: bold;
+    width: 100%;
+    height: 20%;
+    margin-bottom: 1%;
+}
+
+#fxAgreeCB
+{
+    color: goldenrod;
+}
