@@ -1,9 +1,9 @@
 class User
 {
-    name;
-    login;
-    password;
-    agree;
+    public name;
+    public login;
+    public password;
+    public agree;
 
     constructor(name, login, password, agree)
     {

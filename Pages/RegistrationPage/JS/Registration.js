@@ -28,12 +28,12 @@ function creatJSONOfUser()
 {
     let user = {"name": name, "login": login, "password": password, "agree": agree}
 
-    sendUserData(user);
+    sendUserData(user).then(r => null);
 }
 
 async function sendUserData(user)
 {
-    let response = await fetch('http://localhost:62993/api/messages/registration',
+    let response = await fetch('http://localhost:62993/api/registration/registration',
         {
             method: 'POST',
             headers: {'Accept': 'text/pl',
@@ -46,9 +46,12 @@ async function sendUserData(user)
 
 function getResponse(response)
 {
-    if (response.equal("OK"))
-        updateUI();
-    else alert(response);
+    if (response)
+    {
+        if (response == "ОК")
+            updateUI();
+        else alert(response);
+    }
 }
 
 function updateUI()

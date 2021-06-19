@@ -4,14 +4,16 @@ async function sendMessage(docIN)
 {
     doc = docIN;
 
-    let buffer = doc.getElementById("fxMessageArea").value.toString();
+    await getProfile();
+
+    let body = doc.getElementById("fxMessageArea").value.toString();
 
     let response = await fetch('http://localhost:62993/api/messages/send',
         {
         method: 'POST',
         headers: {'Accept': 'text/pl',
             'Content-Type': 'application/json'},
-        body: JSON.stringify({body: buffer})
+        body: JSON.stringify({"dateTime": getCurrentAll(), "senderName": getUser().name, "body": body})
         });
 
     parseResponse(await response.text());
@@ -31,6 +33,6 @@ function updateUI(listOfMessages)
 
     for (let i = 0; i < listOfMessages.length; i++)
     {
-        doc.getElementById("fxMessagesBox").value += listOfMessages[i].body + "\n\n";
+        doc.getElementById("fxMessagesBox").value += listOfMessages[i].getString();
     }
 }

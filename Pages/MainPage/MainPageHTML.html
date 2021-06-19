@@ -6,7 +6,15 @@
     <link rel="stylesheet" type="text/css" href="MainPageCSS.css"/>
     <link rel="stylesheet" type="text/css" href="../CSS/StaticElements.css"/>
     <link rel="stylesheet" type="text/css" href="../CSS/LeftBox.css"/>
+
+    <!-- Блок загрузки системных скриптов -->
+
+    <script src="../../Scripts/TimeDate.js"></script>
+
+    <!-- Окончание блока -->
+
     <script src="../JS/LeftBox.js"></script>
+    <script src="JS/InitializeForm.js"></script>
 </head>
 <body id="fxBody">
 
@@ -27,8 +35,10 @@
 
 <div id="fxMainBox">
     <img id="fxUserAvatar" src="HoboIcon1.jpg" alt="Error 404">
-    <p id="fxUserName">Хуйжопа</p>
+    <span id="fxUserName">%Имя%</span>
 </div>
+
+<script type="module">initializeForm(document);</script>
 
 </body>
 </html>
