@@ -12,7 +12,7 @@ async function initializeForm(docIN)
 
 async function sendRequest()
 {
-    let response = await fetch('http://localhost:62993/api/getinfo/getprofile',
+    let response = await fetch('http://94.181.44.86:25565/api/getinfo/getprofile',
         {
             method: 'POST',
             headers: {'Accept': 'text/pl',

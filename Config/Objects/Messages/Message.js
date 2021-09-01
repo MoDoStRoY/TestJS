@@ -1,8 +1,8 @@
 class Message
 {
-    public dateTime;
-    public senderName;
-    public body;
+    dateTime;
+    senderName;
+    body;
 
     constructor(dateTime, senderName, body)
     {
@@ -11,7 +11,7 @@ class Message
         this.body = body;
     }
 
-    getString()
+    getMessage()
     {
         return this.senderName + " " + this.dateTime + "\n" + this.body + "\n\n";
     }

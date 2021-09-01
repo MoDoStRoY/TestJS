@@ -4,11 +4,11 @@ async function sendMessage(docIN)
 {
     doc = docIN;
 
-    await getProfile();
+    await sendRequest();
 
     let body = doc.getElementById("fxMessageArea").value.toString();
 
-    let response = await fetch('http://localhost:62993/api/messages/send',
+    let response = await fetch('http://94.181.44.86:25565/api/messages/send',
         {
         method: 'POST',
         headers: {'Accept': 'text/pl',
@@ -33,6 +33,7 @@ function updateUI(listOfMessages)
 
     for (let i = 0; i < listOfMessages.length; i++)
     {
-        doc.getElementById("fxMessagesBox").value += listOfMessages[i].getString();
+        doc.getElementById("fxMessagesBox").value += listOfMessages[i].senderName + " " +
+            listOfMessages[i].dateTime + "\n" + listOfMessages[i].body + "\n\n";
     }
 }

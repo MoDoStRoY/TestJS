@@ -33,7 +33,7 @@ function creatJSONOfUser()
 
 async function sendUserData(user)
 {
-    let response = await fetch('http://localhost:62993/api/registration/registration',
+    let response = await fetch('http://94.181.44.86:25565/api/registration/registration',
         {
             method: 'POST',
             headers: {'Accept': 'text/pl',
